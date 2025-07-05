@@ -5,7 +5,6 @@ add_definitions(-D_WIN32_WINNT=0x600)
 spec2def(msctf.dll msctf.spec ADD_IMPORTLIB)
 
 list(APPEND SOURCE
-    context.c
     inputprocessor.c
     msctf.c
     threadmgr.c
@@ -15,6 +14,7 @@ list(APPEND SOURCE
 list(APPEND PCH_SKIP_SOURCE
     categorymgr.cpp
     compartmentmgr.cpp
+    context.cpp
     displayattributemgr.cpp
     documentmgr.cpp
     langbarmgr.cpp
